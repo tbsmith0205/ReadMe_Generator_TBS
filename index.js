@@ -72,10 +72,9 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  // path - join method
-
-  return fs.writeFile();
-}
+  return fs.writeFile(path.join(__dirname + "/dist", fileName), data, (err) =>
+    err ? console.error(err) : console.log("Success!")
+  );
 
 // TODO: Create a function to initialize app
 function init() {
