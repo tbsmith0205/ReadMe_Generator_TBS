@@ -25,11 +25,25 @@ function generateMarkdown(data) {
 
   ## Table of Contents
 
-  *[Installation](#installation)
+  ## Installation
+  ${data.installation}
+
+  ## Instruction
+  ${data.instructions}
+
+  ## Contribution Guidelines
+  ${data.contribution}
+
+  ## Testing Instructions
+  ${data.testing}
 
   ## License
 
   ${renderLicenseLink(data.license)}
+
+  ## Questions
+  ${data.github}
+  ${data.email}
 
 `;
 }
