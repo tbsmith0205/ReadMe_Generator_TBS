@@ -22,16 +22,49 @@ const questions = [
     message: "What is your project name?",
     name: "project",
   },
+
   {
     type: "input",
     message: "Please provide a description of your project.",
     name: "description",
   },
   {
+    type: "input",
+    message:
+      "Please provide any installation instructions that would be needed for this project.",
+    name: "installation",
+  },
+  {
+    type: "input",
+    message:
+      "Please provide any instructions necessary to the user of this project.",
+    name: "insructions",
+  },
+  {
+    type: "input",
+    message: "Please provide contribution guidelines for this project.",
+    name: "contribution",
+  },
+  {
+    type: "input",
+    message: "Please provide any testing instructions for this project.",
+    name: "testing",
+  },
+  {
     type: "list",
-    message: "What license would you like to use?",
+    message: "What license(s) would you like to use?",
     choices: ["MIT", "ISC", "GPL"],
     name: "license",
+  },
+  {
+    type: "input",
+    message: "What is your GitHub username?",
+    name: "github",
+  },
+  {
+    type: "input",
+    message: "What is your email address?",
+    name: "email",
   },
 ];
 
