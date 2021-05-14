@@ -75,6 +75,7 @@ function writeToFile(fileName, data) {
   return fs.writeFile(path.join(__dirname + "/dist", fileName), data, (err) =>
     err ? console.error(err) : console.log("Success!")
   );
+}
 
 // TODO: Create a function to initialize app
 function init() {
