@@ -13,7 +13,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs"); // write file method
 const generateMarkdown = require("./utils/generateMarkdown");
-const path = require();
+const path = require("path");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -38,7 +38,7 @@ const questions = [
     type: "input",
     message:
       "Please provide any instructions necessary to the user of this project.",
-    name: "insructions",
+    name: "instructions",
   },
   {
     type: "input",
@@ -72,7 +72,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  return fs.writeFile(path.join(__dirname + "/dist", fileName), data, (err) =>
+  return fs.writeFile(path.join(__dirname , fileName), data, (err) =>
     err ? console.error(err) : console.log("Success!")
   );
 }
